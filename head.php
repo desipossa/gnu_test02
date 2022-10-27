@@ -27,6 +27,11 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
         include G5_BBS_PATH.'/newwin.inc.php'; // 팝업레이어
     }
 ?>
+    <?php
+    if(!defined('_INDEX_')) { // index에서만 실행
+       include_once (G5_THEME_PATH.'/doc/sub.head.php');
+    }
+    ?>
 
 <div class="Wrap">
     <header class="header">

@@ -19,7 +19,11 @@ if(G5_COMMUNITY_USE === false) {
 <footer class="footer">
     tail
 </footer>
-
+<?php
+    if(!defined('_INDEX_')) { // index에서만 실행
+        echo 'tail_sub';
+    }
+    ?>
 
 
 
