@@ -21,7 +21,13 @@ if(G5_COMMUNITY_USE === false) {
 ?>
 
 <footer class="footer">
-    tail
+    <ul>
+        <li>주소 : <?=$as_address?>&nbsp;&nbsp;사업자등록번호 : <?=$as_num?></li>
+        <li>대표전화 : <?=$as_tel?>&nbsp;&nbsp;Fax : <?=$as_fax?></li>
+    </ul>
+    <address>
+        copyright &copy; <?=$as_title?> allrights reserved.
+    </address>
 </footer>
 
 
@@ -45,6 +51,13 @@ $(function() {
     // 폰트 리사이즈 쿠키있으면 실행
     font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
 });
+</script>
+<script>
+    $(function(){
+        var num = <?=$page_num?>
+    console.log(num) 
+    })
+
 </script>
 
 <?php
