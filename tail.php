@@ -14,17 +14,15 @@ if(G5_COMMUNITY_USE === false) {
 
 
 
-
+<?php
+    if(!defined('_INDEX_')) { // index가 아닐 때...
+        include G5_THEME_PATH.'/sub.tail.php'; // 서버테일
+    }
+?>
 
 <footer class="footer">
     tail
 </footer>
-<?php
-    if(!defined('_INDEX_')) { // index에서만 실행
-        echo 'tail_sub';
-    }
-    ?>
-
 
 
 

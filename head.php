@@ -27,19 +27,22 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
         include G5_BBS_PATH.'/newwin.inc.php'; // 팝업레이어
     }
 ?>
-    <?php
-    if(!defined('_INDEX_')) { // index에서만 실행
-       include_once (G5_THEME_PATH.'/doc/sub.head.php');
-    }
-    ?>
+
 
 <div class="Wrap">
     <header class="header">
         <div class="inner">
+            여기는 항상 따라다니는 메뉴
             <a href="<?php echo G5_THEME_URL ?>/doc/m011.php">일반페이지</a>
             <a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=qa">게시판</a>
         </div>
     </header>
+<?php
+    if(!defined('_INDEX_')) { // index가 아닐 때...
+        include G5_THEME_PATH.'/sub.head.php'; // 서버해드
+    }
+?>
+
 
 
 
