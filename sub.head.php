@@ -1,2 +1,16 @@
-<div class="inner">
-        여기는 서버페이지 일 때만 나오는 해드 <?=$page_num ?> / <?=$page_title ?>
+<div class="sub_page">
+
+<div class="page">
+    <ol class="inner flex">
+        <li>
+            <a href="/">HOME</a>
+        </li>
+        <li>
+            <?=$page_title ?>
+        </li>
+    </ol>
+</div>
+<div class="inner flex">
+    <article class="section">
+        <h3><?=$page_title?></h3>
+
