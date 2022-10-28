@@ -32,13 +32,25 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 <div class="Wrap">
     <div class="top_slogan">
-
+        <ul class="inner flex">
+            <li><?=$as_slogan?></li>
+            <li>
+                <a href="/adm" target="_blank">
+                    <i class="xi-bars"></i>
+                </a>
+            </li>
+        </ul>
     </div>
     <header class="header">
-        <div class="inner">
-            여기는 항상 따라다니는 메뉴
-            <a href="<?php echo G5_THEME_URL ?>/doc/m011.php">일반페이지</a>
-            <a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=qa">게시판</a>
+        <div class="inner flex">
+            <h1>
+                <a href="/">
+                    <img src="<?php echo G5_THEME_URL ?>/img/h1_logo.jpg" alt="<?=$as_title?>">
+                </a>
+            </h1>
+            <nav class="gnb">
+                <?php include G5_THEME_PATH.'/doc/nav.php' ?>
+            </nav>
         </div>
     </header>
 <?php
