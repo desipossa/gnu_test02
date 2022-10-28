@@ -31,7 +31,6 @@ if(G5_COMMUNITY_USE === false) {
 </footer>
 
 
-
 </div>
 
 <?php
@@ -42,6 +41,12 @@ if(G5_DEVICE_BUTTON_DISPLAY && !G5_IS_MOBILE) { ?>
 if ($config['cf_analytics']) {
     echo $config['cf_analytics'];
 }
+?>
+<?
+if($_GET["bo_table"]=="qa") {$page_num = 4;}
+else if ($_GET["bo_table"]=="notice") {$page_num = 5;}
+// else {$page_num = "0";}
+// php는 땀을 중요시 한다. ;
 ?>
 
 <!-- } 하단 끝 -->
@@ -54,8 +59,8 @@ $(function() {
 </script>
 <script>
     $(function(){
-        var num = <?=$page_num?>
-    console.log(num) 
+        var num = <?=$page_num?>;
+        $('.lnb li').eq(num-1).addClass('on').siblings().removeClass('on');
     })
 
 </script>

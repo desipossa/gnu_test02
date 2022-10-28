@@ -30,6 +30,11 @@ include_once(G5_THEME_PATH.'/head.php');
         </p>
     </div>
 </section>
+<div>
+<? echo latest("theme/main_web", "qa",5, 25);?>
+<? echo latest("theme/main_photo", "qa",5, 25);?>
+
+</div>
 </main>
 
 
