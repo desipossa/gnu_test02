@@ -11,6 +11,7 @@ if(G5_COMMUNITY_USE === false) {
     include_once(G5_THEME_SHOP_PATH.'/shop.head.php');
     return;
 }
+include_once(G5_THEME_PATH.'/doc/assets.php');
 include_once(G5_THEME_PATH.'/head.sub.php');
 include_once(G5_LIB_PATH.'/latest.lib.php');
 include_once(G5_LIB_PATH.'/outlogin.lib.php');
@@ -30,6 +31,9 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 
 <div class="Wrap">
+    <div class="top_slogan">
+
+    </div>
     <header class="header">
         <div class="inner">
             여기는 항상 따라다니는 메뉴
