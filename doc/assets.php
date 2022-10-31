@@ -5,5 +5,5 @@ $as_tel = "02)6355-6100";
 $as_fax = "02)325-9459";
 $as_address = "서울특별시 마포구 월드컵북로 402 23층 (상암동, KGIT센터)";
 $as_num = " 137-81-07814";
-
+$as_mail = "sipossa@naver.com";
 ?>
